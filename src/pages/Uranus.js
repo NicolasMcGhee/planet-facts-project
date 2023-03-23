@@ -1,5 +1,5 @@
 import UranusImg from '../../public/assets/planet-Uranus.svg'
-import UranusInternal from '../../public/assets/planet-Uranus-internal.svg'
+import UranusInternal from '../../public/assets/planet-uranus-internal.svg'
 import Planet from "components/Planet";
 import Header from "components/Header";
 
