@@ -34,7 +34,7 @@ export default function Header(props) {
                     <span className={styles.bar}></span>
                 </button>
                 <div className={`${isActive ? styles.planetNav : styles.planetNav.active}`}>
-                    <Link href={"#"}>Mercury</Link>
+                    <Link href={"/"}>Mercury</Link>
                     <Link href={"/Venus"}>Venus</Link>
                     <Link href={"/Earth"}>Earth</Link>
                     <Link href={"/Mars"}>Mars</Link>
