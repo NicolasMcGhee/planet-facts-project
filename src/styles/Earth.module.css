@@ -1,0 +1,310 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    border-bottom: 1px hsl(0, 0%, 40%) solid;
+}
+.nav h1{
+    font-size: 1.75rem;
+}
+
+
+
+.planetNav {
+    display: flex;
+}
+
+.planetNav a {
+    width: 100%;
+    padding-left: 2.5rem;
+    font-size: 1rem;
+
+}
+
+.planetNav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+.main_image {
+    width: 35%;
+    height: 35%;
+    margin-top: 2rem;
+}
+
+.surface_image {
+    position: absolute;
+    left: 25%;
+    bottom: 25%;
+
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
+
+.container 
+{
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.planetDetails {
+    align-items: center;
+}
+
+.description{
+    width: 450px;
+    margin-top: 2rem;
+}
+
+.description p {
+
+    width: 90%;
+    margin-top: 1em;
+    font-size: 1.3em;
+
+}
+
+.description h1{
+    width: 90%;
+    font-size: 5em;
+
+}
+
+.link {
+    color: hsl(0, 0%, 50%);
+    font-weight: 400;
+}
+
+.list ul{
+    list-style-type: none;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.list li{
+    list-style-type: none;
+    margin-top: 20px;
+    border: 2px hsl(0, 0%, 30%) solid;
+    padding: 1.254rem;
+    text-align: left;
+}
+
+.list li:hover {
+    cursor: pointer;
+    background-color: #38384f;
+}
+
+.focusedTab {
+    background-color: #6F2ED6;
+}
+
+
+.listMoble {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style-type: none;
+    border-bottom: 2px hsl(0, 0%, 30%) solid;
+
+}
+
+.listMoble li:hover {
+    text-decoration: underline;
+    text-underline-offset: 1.5rem;
+    text-decoration-color: white;
+
+}
+
+.stats {
+    margin-top: 10rem;
+    gap: 2rem;
+    padding: 0 1.5rem;
+    flex: 1;
+}
+
+.stats li {
+    list-style-type: none;
+    border: 2px hsl(0, 0%, 30%) solid;
+    padding: 1rem 2rem;
+    text-align: left;
+    flex: 1;
+}
+
+
+.stats h3 {
+    color: hsl(0, 0%, 50%);
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.stats p {
+    font-size: 3rem;
+}
+
+.hamburger {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 41px;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.hamburger:focus {
+    outline: #6F2ED6;    
+}
+
+.hamburger .bar {
+    height: 8px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.removetabs {
+    display: none;
+}
+
+@media (min-width: 350px) and (max-width: 768px) {
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hamburger {
+        display: flex;
+    }
+
+    .planetNav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    .focusedTabMobile {
+        text-underline-offset: 1.5rem;
+        text-decoration: underline;
+        text-decoration-color: #6F2ED6;
+    }
+
+    /* .planetNav.active {
+        display: flex;
+        flex-direction: column;
+    } */
+
+
+    .description {
+        text-align: center;
+    }
+    .list {
+        display: none;
+    }
+    .stats {
+        display: block;
+        width: 75%;
+        margin: 3rem auto;
+    }
+    
+    .stats li{
+        margin-bottom: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (min-width: 769px) and (max-width: 1199px) {
+    .container {
+        max-width: 1199px;
+        /* background-color: aqua; */
+        margin-bottom: 2rem;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .planetNav {
+        margin-top: 1rem;
+    }
+
+    .planetNav a{
+        font-size: 1.1rem;
+        justify-content: center;
+        
+    }
+    .description  {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        flex: 1;
+    }
+    .planetFacts {
+        width: 58.8%;
+    }
+    /* .list {
+        display: none;
+    } */
+    .list {
+        width: 38.8%;
+    }
+
+    .listMoble {
+        display: none;
+    }
+
+    .link {
+        text-align: left;
+    }
+
+    /* .stats{
+        flex-direction: row;
+        padding: 0 1.5rem;
+        flex-wrap: wrap;
+        border: 1px red solid;
+    } */
+    .stats {
+        flex-flow: row nowrap;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: 2560px;
+        background-color: black;
+    }
+
+    .flex {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .listMoble {
+        display: none;
+    }
+    
+}
