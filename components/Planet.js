@@ -1,4 +1,4 @@
-import styles from '@/styles/Earth.module.css'
+import styles from '@/styles/Planet.module.css'
 import { Antonio, Fascinate_Inline, League_Spartan } from 'next/font/google'
 import Image from "next/image";
 import { useState } from 'react';

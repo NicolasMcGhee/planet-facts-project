@@ -1,4 +1,4 @@
-import styles from '@/styles/Earth.module.css'
+import styles from '@/styles/Planet.module.css'
 import { Antonio, League_Spartan } from '@next/font/google'
 import Link from 'next/link'
 import { useState } from 'react'
@@ -13,12 +13,11 @@ const spartan = League_Spartan({
 })
 
 
-
 export default function Header(props) {
 
 
 
-    const [isActive, setIsActive] = useState(true)
+    const [isActive, setIsActive] = useState(false)
 
     function handleChange() {
         setIsActive(isActive => !isActive)
@@ -33,15 +32,15 @@ export default function Header(props) {
                     <span className={styles.bar}></span>
                     <span className={styles.bar}></span>
                 </button>
-                <div className={`${isActive ? styles.planetNav : styles.planetNav.active}`}>
-                    <Link href={"/"}>Mercury</Link>
-                    <Link href={"/Venus"}>Venus</Link>
-                    <Link href={"/Earth"}>Earth</Link>
-                    <Link href={"/Mars"}>Mars</Link>
-                    <Link href={"/Jupiter"}>Jupiter</Link>
-                    <Link href={"/Saturn"}>Saturn</Link>
-                    <Link href={"/Uranus"}>Uranus</Link>
-                    <Link href={"/Neptune"}>Neptune</Link>
+                <div className={`${isActive ? styles.planetNavActive : styles.planetNav}`}>
+                    <Link className={styles.planetLink} href={"/"}>Mercury</Link>
+                    <Link className={styles.planetLink} href={"/Venus"}>Venus</Link>
+                    <Link className={styles.planetLink} href={"/Earth"}>Earth</Link>
+                    <Link className={styles.planetLink} href={"/Mars"}>Mars</Link>
+                    <Link className={styles.planetLink} href={"/Jupiter"}>Jupiter</Link>
+                    <Link className={styles.planetLink} href={"/Saturn"}>Saturn</Link>
+                    <Link className={styles.planetLink} href={"/Uranus"}>Uranus</Link>
+                    <Link className={styles.planetLink} href={"/Neptune"}>Neptune</Link>
                 </div>
             </nav>
         </>
