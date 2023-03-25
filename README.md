@@ -1,38 +1,25 @@
-This is an [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Overview
+This is a 8-page Next.js project detailing facts about the 8 planets in a quite beautiful way.
 
-## Getting Started
+# Libraries Uses
+* Next.js
 
-First, run the development server:
+# Designs Provied By [Frontend Mentor](https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f)
+* [Home Page](https://user-images.githubusercontent.com/32345511/227697877-7fcddeb6-df6c-461c-8b9e-7a955456f768.PNG)
+* [Tablet View](https://user-images.githubusercontent.com/32345511/227697891-6dc63ad7-985e-4131-807a-225b83948105.PNG)
+* [Mobile View](https://user-images.githubusercontent.com/32345511/227697887-318cb571-a85c-4c8b-948d-701baa4787da.PNG)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+# How I Worked on this project
+My goal was to get better at CSS and media queries and it paid off.
+* The site is fully responsive, smoothly going for desktop, tablet, and then mobile.
+* Overview, internal, and surface which render their respective info through active states.
+* Mobile has a dropdown menu allowing for easy navigation.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# How to navigate this project.
+* Where the main logic and layout of the site takes place: [Example Code](https://github.com/NicolasMcGhee/planet-facts-project/blob/main/components/Planet.js)
+* Props being used for each page: [Example Code](https://github.com/NicolasMcGhee/planet-facts-project/blob/main/src/pages/Earth.js)
+* CSS: [Example Code](https://github.com/NicolasMcGhee/planet-facts-project/blob/main/src/styles/Planet.module.css)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#Why I built this project this way
+* I like Next.js
+* The main focus of the project was to grow my skill in CSS and media queries and thanks to this project, I have GREATLY improved my ability with both of them. Even though the project is straight forward with the only logic needed really was state for the mobile menu, ternary for the CSS and props, I'm very happy with how this turned out and looking forward to my next challenge.
