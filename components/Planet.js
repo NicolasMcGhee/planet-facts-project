@@ -39,7 +39,7 @@ export default function Planet(props){
                             <p className={`${spartan.className} ${toggleState === 1 ? styles.activeTabs : styles.removetabs}`}>{props.overview}</p>
                             <p className={`${spartan.className} ${toggleState === 2 ? styles.activeTabs : styles.removetabs}`}>{props.surfaceGeo}</p>
                             <p className={`${spartan.className} ${toggleState === 3 ? styles.activeTabs : styles.removetabs}`}>{props.interalStr}</p>
-                            <p className={`${styles.link} ${spartan.className}`}>Source: <a href={props.planetLink} target="_blank"><strong>Wikipedia</strong></a></p>
+                            <p className={`${styles.link} ${spartan.className}`}>Source: <a href={props.planetLink} target="_blank"><strong className={styles.link2}>Wikipedia</strong></a></p>
                         </div>
                         <div className={`${styles.list} ${spartan.className}`}>
                             <ul>
