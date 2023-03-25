@@ -1,5 +1,5 @@
 # Overview
-This is a 8-page Next.js project detailing facts about the 8 planets in quite beautiful way.
+This is a 8-page Next.js project detailing facts about the 8 planets in a quite beautiful way.
 
 # Libraries Uses
 * Next.js
